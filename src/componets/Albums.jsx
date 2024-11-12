@@ -1,8 +1,8 @@
 import data from "../PlayList"
 import styled from "styled-components"
 import PersonalPlayList from "./PersonalPlayList";
-import axios from "axios";
-import { useState, useEffect } from "react";
+// import axios from "axios";
+// import { useState, useEffect } from "react";
 import Recommand from "./recommand";
 
 
@@ -47,7 +47,9 @@ const CreatedPlayList = styled.div`
     display: flex;
     align-items : center;
 `;
-const OwnPlayList = styled.div``;
+const OwnPlayList = styled.div`
+
+`;
 
 const AddtionalAlbumsTitle = styled.div`
     margin: 0px 10px;
@@ -61,7 +63,8 @@ const Recommendation = styled.div`
     width : 70vw;
     display : flex;
     flex-wrap : wrap;
-    justify-content : space-around;
+    
+
 
 `;
 
@@ -90,7 +93,7 @@ const Albums = () => {
             <H4>Show All</H4>
         </AddtionalAlbumsTitle>
         <Recommendation>
-            {/* <Recommand data={albumData} /> */}
+            <Recommand data={data} />
         </Recommendation>
     </Containter>
     </>
